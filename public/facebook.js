@@ -18,4 +18,8 @@ function statusChangeCallback(response) {
   }
 }
 
-function changeUser(response){}
+function changeUser(response){
+  $('.facebookLogin').hide();
+  $("#name").text(response.name);
+  $("#photo").attr("scr",response.picture.url)
+}
