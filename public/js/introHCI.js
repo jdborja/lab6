@@ -30,6 +30,10 @@ function addProjectDetails(e) {
 
 	$.get('/project' + idNumber, addProject);
 }
+$.get("http://URL", callBackFn)
+
+$.post("http://URL", {"json":"json"}, callBackFn)
+
 function addProject(result) {
   var projectHTML = '<a href="#" class="thumbnail">' +
     '<img src="' + result['image'] + '" class="img">' +
